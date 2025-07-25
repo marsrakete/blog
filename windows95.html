@@ -2,84 +2,101 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Meine Windows 95 Anekdote</title>
+  <title>Sommerabenteuer Windows 95</title>
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
-      color: #222;
+      background-color: #f4f4f9;
+      color: #333;
       margin: 0;
-      padding: 2rem;
-      line-height: 1.6;
+      padding: 0;
     }
     header {
       background: linear-gradient(to right, #0078D7, #00BCF2);
       color: white;
       padding: 2rem;
       text-align: center;
-      border-radius: 8px;
     }
-    section {
-      background-color: white;
-      border-radius: 8px;
+    main {
+      max-width: 900px;
+      margin: auto;
+      background: white;
       padding: 2rem;
-      margin-top: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      line-height: 1.7;
     }
     h1, h2 {
-      margin-top: 0;
+      color: #0078D7;
     }
-    code {
-      background-color: #eee;
-      padding: 0.2em 0.4em;
-      border-radius: 4px;
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
     }
     footer {
       text-align: center;
-      font-size: 0.9em;
+      padding: 2rem;
       color: #888;
-      margin-top: 3rem;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Ein Sommerabenteuer: Meine Windows 95 Anekdote</h1>
-  <p>30 Jahre später – Rückblick auf eine technologische Revolution</p>
+  <h1>Sommerabenteuer Windows 95</h1>
+  <p>Eine persönliche Anekdote zur Einführung</p>
 </header>
 
-<section>
-  <h2>Der Anfang – 1995</h2>
-  <p>Im August 1995 brachte Microsoft Windows 95 auf den Markt. Der Nachfolger von Windows 3.11 sollte nicht nur besser aussehen, sondern vor allem neue Maßstäbe setzen – etwa mit <strong>Plug-and-Play</strong>, das Treiberinstallationen revolutionieren sollte.</p>
-</section>
+<main>
+<p>Im August 1995 hat Microsoft sein nagelneues Windows 95 herausgebracht.</p>
+<p>Ich erzähle hier meine persönliche Anekdote zur Geschichte zur Einführung von Windows 95. Das ist nun 30 Jahre her. Man möge mir Fehler bei technischen Details verzeihen.</p>
+<p>Die Herausforderung war, ein Windows zu bauen, dass den Vorläufer Windows 3.11 nicht nur einfach irgendwie ablöste, vielleicht mit moderner Optik, sondern auch neue Masstäbe setzen wollte. 
+Windows 95 lief zwar weiterhin noch On-Top einer (einfachen) DOS-Installation, mit allen Vor- und Nachteilen, wollte aber endlich mit inkompatiblen und miteinander konkurrierenden Treibern für Grafik, Multimedia, Sound, seriellen und parallelen Schnittstellen für Drucker, Maus, Tastaturen, Netzwerk aufräumen und was richtig tolles einführen: Plug-and-Play. Gerät einstöpseln und passender Treiber wird installiert. Ganz ohne Treiber-Disketten vom Hardware-Hersteller.</p>
+<p>Ein Traum für jeden PC-Besitzer! Aber eine krasse Herausforderung!</p>
+<h2>1. Das BIOS musste angepasst werden. Es sollte alle Hardware erkennen und dem Betriebssystem melden.</h2>
+<p>Kein einziges der damaligen BIOSe konnte das. Die damaligen Platzhirsche PHOENIX und AMI waren natürlich mäßig begeistert. Ihr Speicherplatz sehr eng, ihre Routinen zu langsam.</p>
+<h2>2. Eine riesige Datenbank für Hardware und deren Schnittstellen musste aufgebaut werden.</h2>
+<p>Jeder PC-Hersteller, jeder Motherboard-Hersteller, eigentlich jeder Hardware-Hersteller musste seine Hardware melden, mitsamt ein paar Erkennungsmerkmalen, damit ihre Hardware korrekt erkannt und eingebunden werden konnte.
+Das hat Monate gedauert. Was heute trivial wäre - Meldung per Internet Web-Portal, API, Bot, Script. Das gab es alles nicht. Ja, Internet gab es, aber nicht im kommerziellen Umfeld. Es gab COMPUNET, eine kommerzielle Mailbox. Aber Microsoft wollte das nicht nutzen, hatte Bedenken, Interna zu verraten.</p>
+<p>Also Tabellen. Per Partner-Network. Per Diskette. Per FAX. Viel Handarbeit. SEHR VIEL Handarbeit.</p>
+<h2>3. Alles zusammenführen</h2>
+<p>In Windows 95 gab es als zentrale Neuerung den Gerätemanager. Eine hierarchische Struktur für alle Geräte und Schnittstellen. Schön grafisch dargestellt. Bekannte Hardware mit funktionierendem Treiber wurde mit grünem Haken markiert. Bekannte Hardware ohne eigenem Treiber wurde einem Default-Treiber der entsprechenden Hardware-Kategorie zugeordnet und gelb markiert. Rot markiert wurde unbekannte Hardware ohne Treiber. Gelb war doof. Rot war richtig richtig doof.</p>
+<h2>4. Zusammenarbeit</h2>
+<p>Die gelben und roten Marker mussten erkannt, zugeordnet und gemeldet werden. Besser war es aber, mit den Hardware-Herstellern zu sprechen. Und mit den BIOS-Herstellern. Die beiden mussten sich abstimmen. Bestimmte Hardware hatte sich zu melden, musste vom BIOS mit einer ID versehen werden und das Betriebssystem musste diese ID auswerten. Dafür gab es die riesigen Tabellen. Diese Zusammenarbeit war nicht ganz einfach.</p>
+<p>Die BIOS-Hersteller sassen zum Teil in Taiwan und USA. Die Hardware-Hardware-Hersteller weltweit verstreut. Die PC-Hersteller, eigentlich PC-Assembler, die aus zugekauften Bauteilen einen eigenen PC zusammengebaut haben, mussten sich abstimmen. Die Folge: ein weltweites Chaos. Kein Hersteller aber wollte seine Trampelpfade verlassen. Aber Microsoft war auch damals schon niemand, den man ignorieren konnte. Es gab zwar mit OS/2 noch ein zweites Betriebssystem, vornehmlich im Banken-Umfeld genutzt, aber es bot keinen brauchbaren Mehrwert.</p>
+<h2>5. Mein Einsatz</h2>
+<p>Ich durfte im Juli 1995 für 1 Woche in die USA, zu Microsoft in die Zentrale nach Redmond, ein Vorort von Seattle an der Westküste am Pazifik. Ich war noch nie in den USA. Ich bin noch nie ein Automatik-Auto gefahren. Ich hatte keine Ahnung von Straßennetzen in den USA. Ich wusste nicht wie man sich orientiert. Navigation gab es nicht. Es gab nur an der Tanke gekaufte Landkarte. Finde darauf "1 Microsoft Way" in Redmond. Zum Glück hatte ich den ganzen Sonntag Zeit mich umzusehen. Das war eine gute Idee.</p>
+<p>Am Montag dann zu Microsoft auf den damaligen Campus. Ein riesiges Gelände. Nur freie Parkplätze. Erst Tage später habe ich kapiert, dass die Mitarbeiter mit ihren Autos in die Tiefgarage fuhren, dort dann unterirdisch zu ihrem Gebäude. Das ganze Gelände war unterkellert. Mitsamt See, Sportplätzen, Golfplatz, mehreren Hotels (nicht für mich), mehreren Kantinen.</p>
+<p>Ich also rein, an einer Art Hintertür mit Techniker-Empfang habe ich nach meinem Ansprechpartner gefragt. Der wollte mich umgehend nach Hause schicken. Er hätte keinen Platz. Sie wären komplett Land unter. Das geht nicht. Keine Zeit! Er hätte doch gesagt, dass das nicht mehr geht. Ich entgegne, dass ich hier nicht weggehen würde. Ich sei ja schließlich angekündigt. Und meine PCs seien ja schon vor Ort.</p>
+<p>Ich war nicht angekündigt. Meine PCs waren nicht vor Ort. Was ich nicht wusste: Microsoft USA hatte ein Stopp für alle europäischen Hersteller ausgegeben. Microsoft Deutschland hat mich ins Verderben geschickt. Ich wusste genau, wenn ich jetzt gehe, kriege ich keine Zertifizierung, wir würden nicht bei Marktstart dabei sein. Geht ja gar nicht. Am Ende hat der Mensch nachgegeben, mich reingelassen. Und tatsächlich nach meinen 2 PCs gefahndet. Die hingen noch beim Zoll. Also auslösen und liefern lassen. Nächster Tag frühestens. Ich bekam ein kleines Einzelbüro mit nacktem Tisch, Stuhl und Telefon und - nix. Maus, Tastatur und Monitor durfte ich im nahen Microsoft Shop kaufen. Immerhin durfte ich Kaffee und Snacks umsonst in der Kaffeeküche nehmen. Eine neue Erfahrung, dass Getränke in der Firma kostenlos sind.</p>
+<p>Am nächsten Tag trafen die PCs ein. Von da an dreimal täglich diese Prodzedur:
+- neue Windows 95 CD mit allerneuestem Release erhalten
+- Windows auf meinen 2 Rechnern installieren
+- Fehler notieren
+- Fehler an meine Firma in Paderborn schicken: 8h vor meiner Zeit, die waren also schon im Feierabend
+- Fehler an den BIOS-Hersteller in Taiwan schicken (per COMPUNET oder per Lotus Notes): 8h hinter mir, die konnten dann zu Arbeitsbeginn mit meinen Informationen loslegen
+- Warten bis Paderborn erste Rückmeldung gab
+- BIOS download per COMPUNET
+- BIOS flashen
+- Windows installieren</p>
+<p>Mit Glück hatte Taiwan dann den Fehler zu meinem nächsten Arbeitstag behoben und den Kollegen in Paderborn geschickt. Die haben getestet und mir das Ergebnis vor deren Feierabend zugeschickt, also mit mir um 6.00h morgens telefoniert. Und mögliche Lösungen beschrieben. Weltumspannend. Ohne Internet.</p>
+<p>Irgendwann ist das BIOS, bzw. der Flash-Baustein, kaputt gegangen. Ich musste einen EPROM-Brenner und EPROMS kaufen gehen. Das war damals auch nicht mehr so der Standard. Erstmal einen Laden in Seattle finden. Mit den Yellow Pages in der Hand durch die Gegend gecruised. Und bei "Charly", ein Hinterhof-Elektronik-Fritze, gabs das alles. Glück gehabt. Flash-Baustein ausgetauscht gegen EPROM. Diesen gebrannt. Ging!</p>
+<p>Nach Feierabend, nachdem ich meine Reports an Taiwan und Paderborn geschickt habe, konnte ich die spektakuläre Gegend erkunden. Mount Olympus, ein stets schneebedeckter Vulkan. Der Pazifik. Bill Gates riesiges Haus im Lake Washington. Malls erkunden. Gute Burger essen. Beklopptes Trinkgeld-System verstehen. Beklopptes Straßennetz verstehen. Verstehen, dass "Root Beer" kein Bier ist.</p>
+<p>Aus der geplanten 1 Woche wurden 2, wurden fast 3 Wochen. Ich hatte irgendwann keine saubere Wäsche, habe im Hotel den Service genutzt. Habe mit der Fluggesellschaft meinen Flug immer wieder verschoben.</p>
+<h2>6. Geschafft!</h2>
+<p>ABER! Ich hab's geschafft! Meine PCs waren die ersten beiden PCs aus Deutschland, die für Windows 95 zertifiziert wurden. Bäm! Der Kollege von VOBIS war zwar eine Woche vor mir dort, mit nahezu baugleichen PC mit gleichem Motherboard von ASUS aber AMI-Bios statt Phoenix-BIOS, war aber erst nach mir mit seinem PC durch. Sein zweiter PC hat nochmal Tage gebraucht. Der Kollege von ESCOM ist nochmal 2 Wochen nach mir angereist und brauchte noch bis Ende August. Der arrogante Schnösel wollte nicht reden. Mit dem Kollegen von VOBIS haben wir Microsoft aufgemischt. Das war am Ende eine eingeschworene Gemeinschaft, wir wurden von den Technikern der Microsoft Testing Crew für unsere Qualität und schnelle Reaktionen gelobt. Das Engagement hätten sie bei den US-Herstellern (Dell! HP!) nicht gesehen. Andere deutsche Hersteller wie Siemens, Nixdorf, Wortmann usw. sind erst viel später zertifiziert worden.</p>
+<p>Als Entschädigung dafür, dass Microsoft Deutschland mich ins offene Messer geschickt hat, hat die deutsche Ansprechpartnerin, die dazu stiess und natürlich hoch erfreut war, dass ich mich durchsetzen konnte, in das beste Steak-Restaurant Seattle eingeladen. Sie hat dann erzählt, was im Hintergrund alles gelaufen ist, was wir an der technischen Front gar nicht mitbekamen, an Politik und Strategie.</p>
+<p>Auf dem Rückflug nach Frankfurt wurde mein Koffer mit "VERY HEAVY" markiert. Ich hatte ohne Ende Material für die Kollegen dabei. Bücher, CDs, die neueste Microsoft-Maus, Disketten.</p>
+<p>Windows 95 war für mich ein Sommerabenteuer. Für Microsoft ein dringend benötigter Game Changer. Für den Anwender eine Offenbarung.</p>
+<p>Randnotiz: Windows95 kam anfangs ohne TCP/IP-Stack. Es kannte dafür NetBEUI. Den TCP/IP-Stack mussten die Netzwerkkarten-Hersteller beilegen. Das wurde erst in Windows NT geändert. Zu dem Zeitpunkt hatte TCP/IP das Rennen der Protokolle gewonnen.</p>
 
-<section>
-  <h2>Die Herausforderungen</h2>
-  <ul>
-    <li><strong>BIOS-Anpassungen</strong> – PHOENIX & AMI waren überfordert.</li>
-    <li><strong>Hardware-Datenbanken</strong> – Per Diskette, FAX und Handarbeit gepflegt.</li>
-    <li><strong>Gerätemanager</strong> – Grün = gut, Gelb = problematisch, Rot = Katastrophe.</li>
-    <li><strong>Zusammenarbeit</strong> – BIOS-Hersteller, Hardware-Produzenten und Microsoft auf Kollisionskurs.</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Mein Einsatz in Redmond</h2>
-  <p>Im Juli 1995 reiste ich nach Redmond (USA), ohne Anmeldung, ohne PCs vor Ort – aber mit viel Entschlossenheit. Trotz anfänglicher Ablehnung kämpfte ich mich in Microsofts Test-Lab durch. Ich organisierte fehlende Hardware, testete neue Windows-Versionen und tauschte weltweit BIOS-Dateien – ohne Internet!</p>
-  <p>Zwischen BIOS-Flashs, Lotus Notes und COMPUNET-Nachrichten blieb auch Zeit für Burger, Root Beer und einen Trip zu Bill Gates’ Villa.</p>
-</section>
-
-<section>
-  <h2>Der Erfolg</h2>
-  <p>Meine PCs waren die <strong>ersten in Deutschland zertifizierten Windows 95 PCs</strong>! Vor VOBIS, vor ESCOM, weit vor Siemens und Co. Microsoft lobte unsere Reaktionsgeschwindigkeit und Qualität – anders als bei US-Herstellern wie Dell oder HP.</p>
-</section>
-
-<section>
-  <h2>Nachklang</h2>
-  <p>Als Entschädigung gab es ein Steak im besten Restaurant Seattles und einen Koffer voller Dev-Material auf dem Rückflug.</p>
-  <p>Windows 95 war für mich mehr als Software: ein Abenteuer, eine Lektion in Beharrlichkeit, ein Stück Technikgeschichte.</p>
-</section>
+</main>
 
 <footer>
   © 2025 – Persönliche Anekdote zur Einführung von Windows 95

@@ -1,2 +1,2 @@
-# millux.github.io
+# Blog
 Millux' Blog

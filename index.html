@@ -1,4 +1,84 @@
-<html>
-Mein kleines Blog. <p/>
-<a href="windows95.html">Sommerabenteuer Windows 95</a> 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mein kleines Blog</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0f0f0, #dcecff);
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #0078D7;
+      color: white;
+      padding: 2rem 1rem;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+      max-width: 800px;
+      width: 100%;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .blog-link {
+      display: block;
+      background: white;
+      border-left: 6px solid #0078D7;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #0078D7;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .blog-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Willkommen in meinem kleinen Blog</h1>
+    <p>Hier teile ich persönliche Erlebnisse rund um Technik, Computer und mehr.</p>
+  </header>
+
+  <main>
+    <a href="windows95.html" class="blog-link">
+      🌞 Sommerabenteuer Windows 95 – Mein Einsatz bei Microsoft in Redmond
+    </a>
+  </main>
+
+  <footer>
+    © 2025 – Mein kleines Blog
+  </footer>
+
+</body>
 </html>
